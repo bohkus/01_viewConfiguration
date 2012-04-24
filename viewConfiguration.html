@@ -1,0 +1,129 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>viewConfiguration.pl</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rev="made" href="mailto:" />
+</head>
+
+<body style="background-color: white">
+
+
+<!-- INDEX BEGIN -->
+<div name="index">
+<p><a name="__index__"></a></p>
+
+<ul>
+
+	<li><a href="#name">NAME</a></li>
+	<li><a href="#warnings">WARNINGS</a></li>
+	<li><a href="#version">VERSION</a></li>
+	<li><a href="#synopsis">SYNOPSIS</a></li>
+	<li><a href="#description">DESCRIPTION</a></li>
+	<li><a href="#prediction">Prediction</a></li>
+	<li><a href="#author">Author</a></li>
+</ul>
+
+<hr name="index" />
+</div>
+<!-- INDEX END -->
+
+<p>
+</p>
+<hr />
+<h1><a name="name">NAME</a></h1>
+<p>viewConfiguration.pl</p>
+<p>
+</p>
+<hr />
+<h1><a name="warnings">WARNINGS</a></h1>
+<p>You have to update your system form the defaulte SDE_PERL</p>
+<p>Versin to at least 5.8</p>
+<p>simple execute sde_perl viewConfiguration.pl -h</p>
+<p>for more info.</p>
+<p>
+</p>
+<hr />
+<h1><a name="version">VERSION</a></h1>
+<p>VERSION 0.8</p>
+<p>
+</p>
+<hr />
+<h1><a name="synopsis">SYNOPSIS</a></h1>
+<p>sde_perl viewConfiguration.pl [instructions with parameters][Instructions][Single Instructions]</p>
+<p>sde_perl viewConfiguration.pl [Single Instructions]</p>
+<p><strong>Instructions with parameters:</strong></p>
+<p>-V Viewname without username Prefix</p>
+<pre>
+                     <span class="comment"># default value is TIMESTAMP (year.mon.mday.hour.min.sec)</span>
+</pre>
+<pre>
+                     <span class="comment"># TIMESTAMP will use the actual time as name  (-V TIMESTAMP)</span>
+</pre>
+<p>-M PlatformModule (CRH TOP Module)</p>
+<pre>
+                     <span class="comment"># default is CRH1090921</span>
+</pre>
+<p>-L Baseline Label (CRH TOP Module)</p>
+<pre>
+                     <span class="comment"># default is CRH1090921_R1C016</span>
+</pre>
+<p>-C CPATH_LETTER is the Network Dive given by one Character</p>
+<pre>
+                     <span class="comment"># default is M</span>
+</pre>
+<p>-S SingleModule is to add just one of CRH module from the TOP CRH</p>
+<pre>
+                     <span class="comment"># default is CRH1091033</span>
+</pre>
+<pre>
+                     <span class="comment"># use all to add all modules from  1551  [SubSystems]   (-S all)</span>
+</pre>
+<p>-P CRH_PATH defines the relative path in the view to the PROJECTFILE 1551_...cfg</p>
+<pre>
+                     <span class="comment"># default is LD_SubSystems_009\crh1090921_thorium\1551_crh1090921.cfg</span>
+</pre>
+<p><strong>Instructions :</strong></p>
+<p>-f force to overwite Views               # default is disabled</p>
+<p>-m modules from 1551 projectfile [Modules] and the default chapter [SubSystems]</p>
+<p><strong>Single Instructions:</strong></p>
+<p>-v verbose is is the noisy output</p>
+<p>-g version will be printed and nothing else</p>
+<p>-c the ClearCase Mvfs drive version will be printed and nothing else</p>
+<p>-h that will show this help</p>
+<p>
+</p>
+<hr />
+<h1><a name="description">DESCRIPTION</a></h1>
+<p>Flash Packages generation script with routine for automatic CME view handling.</p>
+<p>Main usage is to generate the view for a toplabel according its SERVER_PATH and TOP_PRODUCT_LABEL.</p>
+<p><strong>Example for THORIUM ITP:</strong></p>
+<p>sde_perl viewConfiguration.pl -L CRH1090921_R1C028</p>
+<p>The SERVER_PATH (Mvfs drive) will be taken from the ClearCase settings but can be set, see <a href="#synopsis">SYNOPSIS</a>.</p>
+<p>The PlatformModule is THORIUM (CRH1090921) but can be set, see <a href="#synopsis">SYNOPSIS</a></p>
+<p>Only the Label has to be set via option -L [LABEL]</p>
+<p><strong>Example for how to add Module to View :</strong></p>
+<p>a different PlatformModule and Sub Module will be choosed</p>
+<p>sde_perl viewConfiguration.pl -L CRH1090921_R1C028 -M CRH1090921 -S CRH1091033</p>
+<p>all modules from the 1551 Project file under [SubSystems] will be added to the view</p>
+<p><strong>Example for enhanced module adding (getModuleLabelFromConfig)  :</strong></p>
+<p>sde_perl viewConfiguration.pl -L CRH1090921_R1C028 -S all</p>
+<p>all modules from the 1551 Project file under [SubSystems] and [Modules] will be added to the view</p>
+<p>sde_perl viewConfiguration.pl -L CRH1090921_R1C028 -S all -m</p>
+<p>
+</p>
+<hr />
+<h1><a name="prediction">Prediction</a></h1>
+<p>The -X Option will will give you the possibility to use the script via a XML fie.</p>
+<p>The XML file will also the start for bigger automations and in first step let you scale the list of to be added modules,</p>
+<p>insted of just one, all from [SubSystems] or [SubSystems]and [Modules]</p>
+<p>
+</p>
+<hr />
+<h1><a name="author">Author</a></h1>
+<p><em><a href="mailto:bohumil.kus@stericsson.com">bohumil.kus@stericsson.com</a></em>.</p>
+
+</body>
+
+</html>

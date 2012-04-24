@@ -1,0 +1,75 @@
+# ------------------------------------------------------------------------------   
+# Product content
+# 
+# [SubSystems]     
+# CRH1090714    L2/3
+# CRH1090737    ePHY
+# CRH1090740    Nora
+# CRH1090775    EVP
+# CRH1090867    OSLoader     (Boot)
+# CRH1090868    mCore Acc
+# CRH1090869    mCore App
+# CRH1090870    Swpf Acc
+# CRH1090876    Swpf App
+# CRH1090881    Swpf Audio
+# CRH1090895    Ref Apps
+# CRH1090896    ADE (included in Ref Apps)
+# CRH1091016    XLoader      (Boot)
+# CRH1091031    ISSW         (Boot)
+# CRH1091032    Meminit      (Boot)
+# CRH1091033    ITP
+# CRH1091047    PRCMU        (Boot)
+# CRH1091052    Boot records (Boot)
+# CRH1091091    SUA
+# CRH1090426    Dump Handler
+
+# [Modules]
+# LD_FuncBlocks_042\cnh1607550_access_system_global
+# LD_FuncBlocks_042\cnh1607677_app_system_global
+# LD_FuncBlocks_042\cnh1608550_acc_swplf_global
+# LD_Tools_002\cnh1608190_flashkit
+# SWPF_App_001\cnh1608418_bridge_host_mis
+# SWPF_App_001\cnh1608419_bridge_host_nvidia
+# SWPF_App_001\cnh1608578_u9540_bridge_host_mi
+# LD_PlatformSec_Pub\cnh1608577_lcd_lcm_libraries
+# LD_Tools_002\cnh1608157_imagetool
+# LD_Tools_002\cnh1608196_gdfs_xml_tools
+# LD_Tools_002\cnh1608428_qstore_file_gen
+# LD_Tools_002\cnh1608429_qstore_decompile
+# LD_Tools_002\cnh1608430_trim_area_decompile
+# ------------------------------------------------------------------------------
+
+# ENABLE desired product
+###CRH1090714
+###CRH1090737
+###CRH1090740
+###CRH1090775
+###CRH1090867
+CRH1090868
+CRH1090869
+###CRH1090870
+###CRH1090876
+###CRH1090881
+###CRH1090895
+###CRH1090896
+###CRH1091016
+###CRH1091031
+###CRH1091032
+CRH1091033
+###CRH1091047
+###CRH1091052
+###CRH1091091
+###CRH1090426
+CNH1607550
+CNH1607677
+CNH1608550
+###CNH1608190
+###CNH1608418
+###CNH1608419
+###CNH1608578
+###CNH1608577
+###CNH1608157
+###CNH1608196
+###CNH1608428
+###CNH1608429
+###CNH1608430
